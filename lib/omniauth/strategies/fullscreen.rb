@@ -10,8 +10,8 @@ module OmniAuth
 
       option :client_options, {
         site:           'https://accounts.fullscreen.net',
-        authorize_url:  '/auth/fullscreen/authorize',
-        token_url:      '/oauth/token'
+        authorize_url:  '/auth/authorize',
+        token_url:      '/auth/token'
       }
 
       ##
@@ -51,7 +51,7 @@ module OmniAuth
       end
 
       def user_info
-        @raw_info ||= @access_token.get("/auth/fullscreen/user.json?oauth_token=#{@access_token.token}").parsed
+        @raw_info ||= @access_token.get("/auth/user.json").parsed
       end
 
     end
