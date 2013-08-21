@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["seans@fullscreen.net"]
   gem.description   = %q{The Official Fullscreen OAuth2 strategy}
   gem.summary       = %q{A Official Fullscreen OAuth2 strategy}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/fullscreeninc/omniauth-fullscreen"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
