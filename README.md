@@ -75,7 +75,8 @@ Here's an example of an authentication hash available in the callback by accessi
     :info => {
         :email => "john@company_name.com",
         :first_name => "John",
-        :last_name => "Doe"
+        :last_name => "Doe",
+        :name => "John Doe"
     },
     :credentials => {
         :token => "token",
