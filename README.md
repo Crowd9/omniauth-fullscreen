@@ -21,7 +21,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-You can now access the OmniAuth Google OAuth2 URL: `/auth/fullscreen`
+You can now access the OmniAuth Fullscreen OAuth2 URL: `/auth/fullscreen`
 
 ### Devise
 
@@ -37,7 +37,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Fullscreen"
         sign_in_and_redirect @user, :event => :authentication
       else
-        session["devise.google_data"] = request.env["omniauth.auth"]
+        session["devise.fullscreen_data"] = request.env["omniauth.auth"]
         redirect_to new_user_registration_url
       end
   end
