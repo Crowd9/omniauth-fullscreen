@@ -71,7 +71,7 @@ Here's an example of an authentication hash available in the callback by accessi
 ```ruby
 {
     :provider => "fullscreen",
-    :uid => 12345,
+    :uid => "12345",
     :info => {
         :email => "john@company_name.com",
         :first_name => "John",
@@ -79,7 +79,6 @@ Here's an example of an authentication hash available in the callback by accessi
     },
     :credentials => {
         :token => "token",
-        :refresh_token => "another_token",
         :expires_at => 1354920555,
         :expires => true
     }
