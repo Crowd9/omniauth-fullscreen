@@ -52,3 +52,6 @@ pkg
 .rvmrc
 
 Gemfile.lock
+
+gems
+
