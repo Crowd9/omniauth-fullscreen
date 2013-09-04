@@ -4,7 +4,7 @@ Strategy to authenticate with Fullscreen via OAuth2 in OmniAuth.
 
 ## Installation
 
-Add to your `Gemfile`:
+`omniauth-fullscreen` is hosted through [RubyGems](http://rubygems.org/gems/omniauth-fullscreen).  Add to your `Gemfile`:
 
 ```ruby
 gem "omniauth-fullscreen"
