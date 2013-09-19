@@ -1,5 +1,5 @@
 # Sample app for Google OAuth2 Strategy
-# Make sure to setup the ENV variables GOOGLE_KEY and GOOGLE_SECRET
+# Make sure to setup the ENV variables FULLSCREEN_KEY and FULLSCREEN_SECRET
 # Run with "bundle exec rackup"
 
 require 'rubygems'
