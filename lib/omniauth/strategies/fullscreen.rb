@@ -6,7 +6,7 @@ module OmniAuth
 
       option :name, 'fullscreen'
 
-      option :authorize_options, [:state]
+      option :authorize_options, [:state, :prompt]
 
       option :client_options, {
         site:           'https://accounts.fullscreen.net',

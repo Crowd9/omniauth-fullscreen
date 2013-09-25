@@ -36,7 +36,7 @@ use Rack::Session::Cookie, :secret => ENV['RACK_COOKIE_SECRET']
 
 use OmniAuth::Builder do
   # Regular usage
-  provider :fullscreen, ENV['FULLSCREEN_KEY'], ENV['FULLSCREEN_SECRET'], {}
+  provider :fullscreen, ENV['FULLSCREEN_KEY'], ENV['FULLSCREEN_SECRET'], { prompt: 'consent' }
 end
 
 run App.new
