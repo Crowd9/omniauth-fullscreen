@@ -3,10 +3,9 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class Fullscreen < OmniAuth::Strategies::OAuth2
-
       option :name, 'fullscreen'
 
-      option :authorize_options, [:state, :prompt]
+      option :authorize_options, [:state, :prompt, :scope]
 
       option :client_options, {
         site:           'https://accounts.fullscreen.net',
